@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controller">
+   <children>
+      <GridPane prefHeight="570.0" prefWidth="565.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="504.66664632161456" minHeight="10.0" prefHeight="392.6666666666667" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="407.3333231608073" minHeight="10.0" prefHeight="286.6666666666667" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="379.0" prefWidth="565.0" style="-fx-background-color: #124563;">
+               <children>
+                  <Circle fill="#3c9651" layoutX="20.0" layoutY="75.0" opacity="0.3" radius="247.0" stroke="#ffffff00" strokeType="INSIDE" />
+                  <HBox fx:id="leftList" layoutX="50.0" layoutY="33.0" prefHeight="297.0" prefWidth="240.0">
+                     <children>
+                        <ListView fx:id="availableListView" maxHeight="345.0" maxWidth="275" prefHeight="339.0" prefWidth="267.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="rightList" layoutX="288.0" layoutY="33.0" prefHeight="297.0" prefWidth="240.0">
+                     <children>
+                        <ListView fx:id="unAvailableListView" maxHeight="345.0" maxWidth="275" prefHeight="339.0" prefWidth="267.0" />
+                     </children>
+                  </HBox>
+                  <Text fill="WHITE" layoutX="70.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available rooms" wrappingWidth="160.81120300292963">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="343.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booked rooms" wrappingWidth="160.81120300292963">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane prefHeight="181.0" prefWidth="565.0" style="-fx-background-color: #124563;" GridPane.rowIndex="1">
+               <children>
+                  <CubicCurve controlX1="-464.3333435058594" controlX2="197.00006103515625" controlY1="-176.6666717529297" controlY2="24.000015258789062" endX="157.33331298828125" endY="106.00004577636719" fill="#13852a" layoutX="408.0" layoutY="126.0" opacity="0.19" startX="-408.0000305175781" startY="106.66667175292969" stroke="TRANSPARENT" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="75.0" layoutX="209.0" layoutY="17.0" stroke="BLACK" strokeType="INSIDE" width="152.0" />
+                  <Button layoutX="46.0" layoutY="100.0" mnemonicParsing="false" onAction="#makeBooking" text="Make Booking" />
+                  <TextField fx:id="resident" layoutX="46.0" layoutY="24.0" promptText="Full name" />
+                  <TextField fx:id="daysRented" layoutX="47.0" layoutY="55.0" promptText="Duration of stay" />
+                  <Button layoutX="416.0" layoutY="100.0" mnemonicParsing="false" onAction="#removeBooking" text="Remove Booking" />
+                  <Text fx:id="prompt" fill="WHITE" layoutX="36.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="493.98306465148926">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
+                  <Text fx:id="confirmation" fill="WHITE" layoutX="377.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="171.3164768218994" />
+                  <Text layoutX="215.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prices per day:" wrappingWidth="181.99998474121094">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Text>
+                  <Text layoutX="226.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Single room:   100 ,-" wrappingWidth="128.48735761642456">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
+                  <Text layoutX="226.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Double room: 150 ,-" wrappingWidth="151.59823989868164">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
+                  <Line endX="248.66668701171875" endY="-1.52587890625E-5" layoutX="283.0" layoutY="177.0" startX="-233.111083984375" startY="-1.52587890625E-5" stroke="WHITE" />
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</Pane>

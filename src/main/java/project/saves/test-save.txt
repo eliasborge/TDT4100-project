@@ -1,0 +1,32 @@
+6
+5
+1-1-3-Hans Rimmen-false
+2-1-0-No Resident-true
+3-1-0-No Resident-true
+4-1-0-No Resident-true
+5-1-0-No Resident-true
+6-1-0-No Resident-true
+1-2-0-No Resident-true
+2-2-4-Guri Olsen-false
+3-2-0-No Resident-true
+4-2-0-No Resident-true
+5-2-0-No Resident-true
+6-2-0-No Resident-true
+1-3-0-No Resident-true
+2-3-0-No Resident-true
+3-3-5-Sindre Nilsen-false
+4-3-0-No Resident-true
+5-3-0-No Resident-true
+6-3-0-No Resident-true
+1-4-0-No Resident-true
+2-4-0-No Resident-true
+3-4-0-No Resident-true
+4-4-0-No Resident-true
+5-4-0-No Resident-true
+6-4-0-No Resident-true
+1-5-0-No Resident-true
+2-5-0-No Resident-true
+3-5-0-No Resident-true
+4-5-0-No Resident-true
+5-5-0-No Resident-true
+6-5-0-No Resident-true
